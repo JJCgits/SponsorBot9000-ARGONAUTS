@@ -22,10 +22,10 @@ for companyEmail in companyEmails:
     if(str(companyEmail) != "nan"):
         newCompanyEmails.append(companyEmail)
 # change these as per use
-phoneNumber = "(947) 226-0436"
-studentEmail = "jjchiyezhan26@gmail.com"
-my_email = "jjchiyezhan26@gmail.com"
-my_password = "ppuecssikikfjwii"
+phoneNumber = ""
+studentEmail = ""
+my_email = ""
+my_password = ""
 subject="Troy Robotics Team Partnership"
 name = "Joshua Chiyezhan"
 print(newCompanyEmails)
