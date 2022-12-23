@@ -82,6 +82,7 @@ def findEmail():
                     link = base_url + link
                 elif not link.startswith('http'):
                     link = path + link
+                
                 # add the new url to the queue if it was not in unprocessed list nor in processed list yet
                 if not link in unprocessed_urls and not link in processed_urls:
                     unprocessed_urls.append(link)
@@ -90,7 +91,9 @@ def findEmail():
             break
 
 for link in companyLinks:
-    starting_url = "https://" + str(link)
+    starting_url = str(link)
+    if not link.startswith("http://"):
+                    starting_url = "http://" + link
     unprocessed_urls = deque([starting_url])
     unprocessed_urls = deque([starting_url])
     companyName = companyNames[counter]
